@@ -1,0 +1,162 @@
+body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Hero (banner + overlay + tekst) */
+.hero {
+  position: relative;
+  width: 100%;
+  max-height: 637px;
+  overflow: hidden;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  max-height: 637px;
+  display: block;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1, .hero-content p {
+  margin: 0;
+  padding: 0 1rem;
+  color:#f0f0f0
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Zoekbalk container met icoon */
+.search-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+  position: relative;
+}
+
+/* Icoon styling */
+.search-container i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #aaaaaa;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+/* Input zelf */
+#searchInput {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.5rem; /* Extra ruimte links voor het icoon */
+  border: 2px solid #00bcd4;
+  border-radius: 8px;
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect */
+#searchInput:focus {
+  border-color: #00e5ff;
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.4);
+}
+
+/* Placeholder kleur */
+#searchInput::placeholder {
+  color: #aaaaaa;
+}
+
+nav {
+  background-color: #1a1a1a;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00c3ff;
+}
+
+h1 {
+  text-align: center;
+  color: #00bcd4;
+  margin-bottom: 2rem;
+}
+
+.collapsible {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #00bcd4;
+  transition: background 0.3s ease;
+}
+
+.collapsible:hover {
+  background-color: #292929;
+}
+
+.content {
+  padding: 0 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #1a1a1a;
+  border-left: 2px solid #00bcd4;
+  margin-bottom: 1rem;
+}
+
+.content p, .content ul {
+  margin: 1rem 0;
+}

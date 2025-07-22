@@ -1,0 +1,159 @@
+/* Algemene reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eee;
+  background-color: #111;
+}
+
+/* Banner header */
+.hero {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  object-position: center center;
+  filter: brightness(0.5);
+  z-index: 0;
+}
+
+.overlay {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  color: #00c3ff;
+  font-size: 3rem;
+  text-shadow: 0 0 10px #00c3ff;
+  padding: 0 1rem;
+  text-align: center;
+  max-width: 90vw;
+}
+
+/* Navigatie */
+nav {
+  background-color: #222;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  color: #00c3ff;
+}
+
+/* Main team sectie */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.team h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00c3ff;
+  text-shadow: 0 0 8px #00c3ff;
+}
+
+/* Elke rang groep */
+.rank-group {
+  margin-bottom: 3rem;
+}
+
+.rank-group h3 {
+  font-size: 1.8rem;
+  color: #00c3ff;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #00c3ff;
+  padding-bottom: 0.3rem;
+}
+
+/* Rij met team leden */
+.team-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+}
+
+/* Card voor elk team lid */
+.team-card {
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 160px;
+  box-shadow: 0 4px 10px rgba(0, 195, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 195, 255, 0.6);
+}
+
+.team-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.8rem;
+  border: 2px solid #00c3ff;
+}
+
+.team-card h4 {
+  margin-bottom: 0.2rem;
+  font-size: 1.2rem;
+  color: #00c3ff;
+}
+
+.team-card p {
+  font-size: 1rem;
+  color: #ccc;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #111;
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
